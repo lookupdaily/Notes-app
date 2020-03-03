@@ -12,6 +12,7 @@ NoteList.prototype = (function() {
   };
 
   return {
-    displayList, createNote
+    displayList: displayList, 
+    createNote: createNote
   };
 })();

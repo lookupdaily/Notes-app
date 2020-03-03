@@ -20,6 +20,6 @@ Note.prototype = (function() {
   };
 
   return {
-    displayNote
+    displayNote: displayNote
   };
 })();
