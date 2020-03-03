@@ -1,6 +1,7 @@
 function NoteController(noteList = new NoteList()) {
-noteList.createNote('Favourite drink: seltzer')
-noteList.createNote('Favourite food: chinese')
+this.noteList = noteList
+this.noteList.createNote('Favourite drink: seltzer')
+this.noteList.createNote('Favourite food: chinese')
 this.noteListView = new NoteListView(noteList)
 
 }
