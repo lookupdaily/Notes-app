@@ -3,6 +3,9 @@ describe("Note list view", () => {
   noteList.createNote('Favourite food: pesto')
   var noteListView = new NoteListView(noteList);
   it('instantiates with a note list', () => {
-  expect(noteListView.displayNoteView()).toBe('<ul><li><div>Favourite food: pesto</div><li></ul>')
+  expect(noteListView.noteList).toBeInstanceOf(NoteList)
+  })
+  it('returns list of items in html tags', () => {
+    expect(noteListView.displayNoteView()).toBe('<ul><li><div>Favourite food: pesto</div><li></ul>')
   })
 });
