@@ -1,6 +1,5 @@
 describe("Note list", () => {
 
-  note1 = new Note("This is my new note-1")
   noteList = new NoteList();
   
   it("creates an empty array", () => {
@@ -8,6 +7,7 @@ describe("Note list", () => {
   });
 
   it("store a note", () => {
-    expect(noteList.storeNote(note1)).toBe([note1]);
+    var note1 = noteList.createNote('This is a note'); // new Note
+    expect(noteList.displayList()[0]).toBeInstanceOf(Note); // to be an instance of note
   });
 });

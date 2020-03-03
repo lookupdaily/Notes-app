@@ -6,12 +6,12 @@ NoteList.prototype = (function() {
   function displayList() {
     return this.storedNotes
   };
-  
-  function storeNote(note) {
+
+  function createNote(note) {
     this.storedNotes.push(new Note(note))
   };
 
   return {
-    displayList, storeNote
+    displayList, createNote
   };
 })();

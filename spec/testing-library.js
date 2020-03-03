@@ -14,6 +14,15 @@ const matchers = (exp) => ({
       console.log('fail')
       return false
     };
+  },
+  toBeInstanceOf: (assertion) => {
+    if (exp instanceof assertion) {
+      console.log('pass')
+      return true
+    } else {
+      console.log('fail')
+      return false
+    };
   }
 });
 
