@@ -1,17 +1,4 @@
 describe ("note controller", function() {
-  // function NoteListDouble() {
-  //   this.storedNotes = []
-  // };
-
-  // NoteListDouble.prototype = {
-  //   createNote: function(note) {
-  //     this.storedNotes.push({text: note})
-  //   },
-  //   displayList: function() {
-  //     return this.storedNotes
-  //   }
-  // }
-
 
   noteController = new NoteController(new NoteList);
 
@@ -22,5 +9,11 @@ describe ("note controller", function() {
   it("adds a note to the note list", function() {
     noteController.insertHTML();
     expect(document.getElementById('app').innerHTML).toBe('<ul><li><div>Favourite drink: seltzer</div></li></ul>')
+  })
+
+  it("adds more than one note to the view", function() {
+    noteController.noteList.createNote("Buy some milk Ziad!")
+    noteController.insertHTML();
+    expect(document.getElementById('app').innerHTML).toBe('<ul><li><div>Favourite drink: seltzer</div></li><li><div>Buy some milk Ziad!</div></li></ul>')
   })
 });
