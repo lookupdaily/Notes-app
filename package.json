@@ -1,0 +1,23 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Project working with JavaScript --> week 7 --> Makers Onsite",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsoobratty/notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsoobratty/notes/issues"
+  },
+  "homepage": "https://github.com/zsoobratty/notes#readme"
+}

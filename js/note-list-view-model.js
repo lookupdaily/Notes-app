@@ -3,7 +3,6 @@ function NoteListView(noteList) {
 }
 
 NoteListView.prototype = (function() {
-
   function displayNoteView() {
     var note = '';
     for(let i = 0; i < this.noteList.displayList().length; i++) {
