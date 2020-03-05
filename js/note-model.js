@@ -1,14 +1,14 @@
-function Note(text) {
-  this.text = text
-};
+(function(exports) {
 
-Note.prototype = (function() {
-  function displayNote() {
-    return this.text
-  };
+  function Note(text) {
+    this.text = text
+    this.id = 1
+  }
 
-  return {
-    displayNote: displayNote
-  };
-})();
-  
+  exports.Note = Note;
+
+  Note.prototype.displayNote = function() {
+      return this.text
+    };
+
+})(this)

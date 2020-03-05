@@ -12,8 +12,19 @@ const matchers = (exp) => ({
       return true
     } else {
       console.log('%c fail', 'color: red')
-      console.log(`%c got: ${assertion}`, 'color: red')
-      console.log(`%c expected: ${exp}`, 'color: blue')
+      console.log(`%c got: ${exp}`, 'color: red')
+      console.log(`%c expected: ${assertion}`, 'color: blue')
+      return false
+    };
+  },
+  notToBe: (assertion) => {
+    if (exp !== assertion) {
+      console.log('%c pass', 'color: green')
+      return true
+    } else {
+      console.log('%c fail', 'color: red')
+      console.log(`%c got: ${exp}`, 'color: red')
+      console.log(`%c expected not to be: ${assertion}`, 'color: blue')
       return false
     };
   },
@@ -23,8 +34,8 @@ const matchers = (exp) => ({
       return true
     } else {
       console.log('%c fail', 'color: red')
-      console.log(`%c got: ${assertion}`, 'color: red')
-      console.log(`%c expected: ${exp}`, 'color: blue')
+      console.log(`%c got: ${exp}`, 'color: red')
+      console.log(`%c expected: ${assertion}`, 'color: blue')
       return false
     };
   }
