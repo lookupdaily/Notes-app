@@ -6,7 +6,7 @@ describe("Note list", () => {
     expect(Array.isArray(noteList.displayList())).toBe(true);
   });
 
-  it("store a note", () => {
+  it("stores a note", () => {
     var note1 = noteList.createNote('This is a note'); // new Note
     expect(noteList.displayList()[0]).toBeInstanceOf(Note); // to be an instance of note
   });
