@@ -1,6 +1,5 @@
 function NoteView(note) {
   this.note = note
-  console.log(this.note)
 };
 
 NoteView.prototype = (function() {
