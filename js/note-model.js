@@ -1,8 +1,8 @@
 (function(exports) {
 
-  function Note(text) {
+  function Note(text, id) {
     this.text = text
-    this.id = 1
+    this.id = id
   }
 
   exports.Note = Note;

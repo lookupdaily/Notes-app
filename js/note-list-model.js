@@ -1,5 +1,6 @@
 function NoteList() {
   this.storedNotes = []
+  this.nextId = 1
 };
 
 NoteList.prototype = (function() {
@@ -8,7 +9,8 @@ NoteList.prototype = (function() {
   };
 
   function createNote(note) {
-    this.storedNotes.push(new Note(note))
+    this.storedNotes.push(new Note(note, this.nextId))
+    this.nextId ++
   };
 
   return {
