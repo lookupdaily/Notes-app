@@ -11,3 +11,4 @@ Note.prototype = (function() {
     displayNote: displayNote
   };
 })();
+  
